@@ -13,6 +13,14 @@
 		35983557271244CC000B441A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35983555271244CC000B441A /* Main.storyboard */; };
 		35983559271244DE000B441A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 35983558271244DE000B441A /* Assets.xcassets */; };
 		3598355C271244DE000B441A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3598355A271244DE000B441A /* LaunchScreen.storyboard */; };
+		3598356E27125106000B441A /* UserProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3598356D27125106000B441A /* UserProfileViewController.swift */; };
+		3598357127125E56000B441A /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3598357027125E56000B441A /* User.swift */; };
+		3598357427126381000B441A /* UserFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3598357327126381000B441A /* UserFetcher.swift */; };
+		3598357A27129C68000B441A /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3598357927129C67000B441A /* TableViewController.swift */; };
+		3598358227129F8D000B441A /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3598358127129F8D000B441A /* UserCell.swift */; };
+		3598358627135119000B441A /* FollowUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3598358527135119000B441A /* FollowUser.swift */; };
+		3598358927135267000B441A /* FollowUserFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3598358827135267000B441A /* FollowUserFetcher.swift */; };
+		3598358D271371C6000B441A /* FollowUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3598358C271371C6000B441A /* FollowUserViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +32,14 @@
 		35983558271244DE000B441A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3598355B271244DE000B441A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3598355D271244DE000B441A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3598356D27125106000B441A /* UserProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileViewController.swift; sourceTree = "<group>"; };
+		3598357027125E56000B441A /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		3598357327126381000B441A /* UserFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserFetcher.swift; sourceTree = "<group>"; };
+		3598357927129C67000B441A /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		3598358127129F8D000B441A /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
+		3598358527135119000B441A /* FollowUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowUser.swift; sourceTree = "<group>"; };
+		3598358827135267000B441A /* FollowUserFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowUserFetcher.swift; sourceTree = "<group>"; };
+		3598358C271371C6000B441A /* FollowUserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowUserViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +72,47 @@
 		3598354E271244CC000B441A /* SpeerTechnologies_iOS_assessment */ = {
 			isa = PBXGroup;
 			children = (
+				3598356727124578000B441A /* Controller */,
+				3598356627124570000B441A /* View */,
+				3598356527124567000B441A /* Model */,
 				3598354F271244CC000B441A /* AppDelegate.swift */,
 				35983551271244CC000B441A /* SceneDelegate.swift */,
-				35983553271244CC000B441A /* ViewController.swift */,
 				35983555271244CC000B441A /* Main.storyboard */,
 				35983558271244DE000B441A /* Assets.xcassets */,
 				3598355A271244DE000B441A /* LaunchScreen.storyboard */,
 				3598355D271244DE000B441A /* Info.plist */,
 			);
 			path = SpeerTechnologies_iOS_assessment;
+			sourceTree = "<group>";
+		};
+		3598356527124567000B441A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3598357027125E56000B441A /* User.swift */,
+				3598358527135119000B441A /* FollowUser.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3598356627124570000B441A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				35983553271244CC000B441A /* ViewController.swift */,
+				3598356D27125106000B441A /* UserProfileViewController.swift */,
+				3598357927129C67000B441A /* TableViewController.swift */,
+				3598358127129F8D000B441A /* UserCell.swift */,
+				3598358C271371C6000B441A /* FollowUserViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3598356727124578000B441A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3598357327126381000B441A /* UserFetcher.swift */,
+				3598358827135267000B441A /* FollowUserFetcher.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +185,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3598358227129F8D000B441A /* UserCell.swift in Sources */,
+				3598357427126381000B441A /* UserFetcher.swift in Sources */,
+				3598357A27129C68000B441A /* TableViewController.swift in Sources */,
 				35983554271244CC000B441A /* ViewController.swift in Sources */,
+				3598356E27125106000B441A /* UserProfileViewController.swift in Sources */,
 				35983550271244CC000B441A /* AppDelegate.swift in Sources */,
+				3598357127125E56000B441A /* User.swift in Sources */,
+				3598358D271371C6000B441A /* FollowUserViewController.swift in Sources */,
+				3598358927135267000B441A /* FollowUserFetcher.swift in Sources */,
+				3598358627135119000B441A /* FollowUser.swift in Sources */,
 				35983552271244CC000B441A /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
